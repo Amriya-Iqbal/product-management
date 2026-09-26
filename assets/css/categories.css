@@ -1,0 +1,121 @@
+/* =========================
+   CATEGORY PAGE
+========================= */
+
+.category-name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.category-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: #f1f5f9;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-icon i {
+    font-size: 18px;
+}
+
+.category-info-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 22px;
+}
+
+.category-info-icon {
+    color: #2563eb;
+    font-size: 18px;
+}
+
+.category-info-box strong {
+    font-size: 14px;
+    color: #334155;
+}
+
+.category-info-box p {
+    margin: 3px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.empty-state {
+    padding: 20px;
+}
+
+.empty-state > i {
+    font-size: 42px;
+    color: #94a3b8;
+}
+
+.empty-state h6 {
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+.empty-state p {
+    color: #64748b;
+    margin-bottom: 18px;
+}
+
+.category-table {
+    min-width: 700px;
+}
+
+.category-table .dropdown-menu {
+    min-width: 130px;
+}
+
+.category-table .dropdown-item {
+    font-size: 13px;
+    padding: 8px 14px;
+}
+
+.category-table .dropdown-item i {
+    width: 18px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 767px) {
+    .category-name {
+        min-width: 180px;
+    }
+
+    .category-table {
+        min-width: 650px;
+    }
+
+    .category-info-box {
+        align-items: flex-start;
+    }
+}
+/* =========================
+   DELETE MODAL
+========================= */
+
+.delete-icon {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: #fee2e2;
+    color: #dc2626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+}

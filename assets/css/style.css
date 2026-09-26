@@ -1,0 +1,519 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", "Segoe UI", sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+/* =========================
+   ADMIN LAYOUT
+========================= */
+
+.admin-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    width: 250px;
+    min-height: 100vh;
+    background: #0f172a;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.sidebar-logo {
+    height: 75px;
+    padding: 0 22px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+}
+
+.sidebar-logo h5 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.sidebar-logo span {
+    font-size: 11px;
+    color: #94a3b8;
+}
+
+.sidebar-menu {
+    padding: 20px 14px;
+}
+
+.menu-title {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #64748b;
+    padding: 0 12px;
+    margin-bottom: 8px;
+}
+
+.menu-item {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 13px;
+    margin-bottom: 4px;
+    border-radius: 8px;
+    color: #94a3b8;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.menu-item i {
+    font-size: 17px;
+}
+
+.menu-item:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: #fff;
+}
+
+.menu-item.active {
+    background: #2563eb;
+    color: #fff;
+}
+
+.logout-link:hover {
+    background: rgba(239, 68, 68, 0.12);
+    color: #f87171;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main-content {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    min-height: 100vh;
+}
+
+/* =========================
+   TOP NAVBAR
+========================= */
+
+.top-navbar {
+    height: 75px;
+    background: #fff;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.page-heading h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.page-heading p {
+    margin: 3px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.admin-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.admin-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-info strong {
+    font-size: 13px;
+    color: #1e293b;
+}
+
+.admin-info span {
+    font-size: 11px;
+    color: #64748b;
+}
+
+/* =========================
+   CONTENT AREA
+========================= */
+
+.content-area {
+    padding: 30px;
+}
+
+.content-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.content-header h5 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.content-header p {
+    margin: 4px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 9px 15px;
+}
+
+.btn-primary {
+    background: #2563eb;
+    border-color: #2563eb;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+.btn-light {
+    color: #334155;
+}
+
+/* =========================
+   ALERTS
+========================= */
+
+.alert {
+    border-radius: 9px;
+    font-size: 13px;
+}
+
+/* =========================
+   SEARCH / FILTER CARD
+========================= */
+
+.filter-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box i {
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    z-index: 2;
+}
+
+.search-box .form-control {
+    padding-left: 38px;
+}
+
+/* =========================
+   TABLE CARD
+========================= */
+
+.table-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+}
+
+.table-card-header {
+    padding: 18px 20px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.table-card-header h5 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.table-card-header span {
+    display: block;
+    margin-top: 3px;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.custom-table {
+    color: #334155;
+    font-size: 13px;
+}
+
+.custom-table thead th {
+    background: #f8fafc;
+    color: #64748b;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    padding: 13px 16px;
+    border-bottom: 1px solid #e2e8f0;
+    white-space: nowrap;
+}
+
+.custom-table tbody td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.custom-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.custom-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+/* =========================
+   FORMS
+========================= */
+
+.form-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.form-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 7px;
+}
+
+.form-control,
+.form-select {
+    border-color: #dbe2ea;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-text {
+    font-size: 11px;
+    color: #64748b;
+}
+
+/* =========================
+   FORM SECTIONS
+========================= */
+
+.form-section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.section-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: #eff6ff;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+}
+
+.form-section-title h6 {
+    margin: 0;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.form-section-title p {
+    margin: 3px 0 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.modal-content {
+    border-radius: 14px;
+}
+
+.modal-header {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.modal-footer {
+    border-top: 1px solid #e2e8f0;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+.sidebar-toggle {
+    border: 0;
+    background: transparent;
+    font-size: 22px;
+    color: #334155;
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.25s ease;
+    }
+
+    .main-content {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .top-navbar {
+        padding: 0 20px;
+    }
+
+    .content-area {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .top-navbar {
+        height: auto;
+        min-height: 70px;
+    }
+
+    .admin-info {
+        display: none;
+    }
+
+    .content-header {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .content-header .btn {
+        width: 100%;
+    }
+
+    .form-card {
+        padding: 20px;
+    }
+
+    .form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .form-actions .btn {
+        width: 100%;
+    }
+}
+/* =========================
+   FORM SECTION
+========================= */
+
+.form-section {
+    margin-bottom: 25px;
+}
+
+.form-section:last-child {
+    margin-bottom: 0;
+}

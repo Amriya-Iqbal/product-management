@@ -1,0 +1,269 @@
+/* =========================
+   PRODUCTS PAGE
+========================= */
+
+.product-image {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid #e2e8f0;
+}
+
+.product-image-placeholder {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    background: #f1f5f9;
+    color: #94a3b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-details strong {
+    font-size: 13px;
+    color: #1e293b;
+}
+
+.product-details span {
+    font-size: 11px;
+    color: #64748b;
+    margin-top: 2px;
+}
+
+.sku-text {
+    font-size: 12px;
+    color: #64748b;
+    font-family: monospace;
+}
+
+.price-text {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.stock-text {
+    font-weight: 600;
+}
+
+.stock-low {
+    color: #dc2626;
+}
+
+.stock-normal {
+    color: #16a34a;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.status-badge.active {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.status-badge.inactive {
+    background: #f1f5f9;
+    color: #64748b;
+}
+
+.category-badge {
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 5px 9px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.product-empty-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 12px;
+    border-radius: 50%;
+    background: #f1f5f9;
+    color: #94a3b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.product-count {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.product-action-btn {
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+/* =========================
+   PRODUCT SUMMARY
+========================= */
+
+.product-summary {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 14px;
+}
+
+.product-summary-image {
+    width: 55px;
+    height: 55px;
+    border-radius: 9px;
+    object-fit: cover;
+}
+
+.product-summary-placeholder {
+    width: 55px;
+    height: 55px;
+    border-radius: 9px;
+    background: #e2e8f0;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-summary-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-summary-info strong {
+    font-size: 14px;
+    color: #1e293b;
+}
+
+.product-summary-info span {
+    font-size: 12px;
+    color: #64748b;
+    margin-top: 2px;
+}
+
+/* =========================
+   DELETE MODAL
+========================= */
+
+.delete-icon {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: #fee2e2;
+    color: #dc2626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+}
+
+/* =========================
+   PRODUCT TABLE
+========================= */
+
+.products-table {
+    min-width: 900px;
+}
+
+.products-table .dropdown-menu {
+    min-width: 130px;
+}
+
+.products-table .dropdown-item {
+    font-size: 13px;
+    padding: 8px 14px;
+}
+
+.products-table .dropdown-item i {
+    width: 18px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 767px) {
+    .product-info {
+        min-width: 180px;
+    }
+
+    .products-table {
+        min-width: 850px;
+    }
+
+    .product-summary {
+        align-items: flex-start;
+    }
+}
+/* =========================
+   PAGINATION
+========================= */
+
+.pagination .page-link {
+    color: #475569;
+    border-color: #e2e8f0;
+    font-size: 12px;
+    min-width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination .page-link:hover {
+    background: #f8fafc;
+    color: #2563eb;
+}
+
+.pagination .page-item.active .page-link {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: #fff;
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #cbd5e1;
+    background: #f8fafc;
+}
+
+@media (max-width: 767px) {
+    .pagination {
+        margin-top: 12px;
+    }
+
+    .table-card > .d-flex {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+}
