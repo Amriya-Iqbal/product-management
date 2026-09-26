@@ -13,15 +13,12 @@
 
 ![Products Page](screenshots/products.png)
 
-### Add Product
+### Add & Edit Product
 
 ![Add Product](screenshots/add-product.png)
+![Edit Product](screenshots/Edit-product.png)
 
 ### Categories
 
 ![Categories Page](screenshots/categories.png)
 ![Categories Page](screenshots/add-category.png)
-
-### 
-![Edit Product](screenshots/Edit-product.png)
-
