@@ -1,8 +1,9 @@
 ## Screenshots
 
-### Login & register
+### Login & Register
 
 ![Login Page](screenshots/login.png)
+
 ![Register Page](screenshots/Register.png)
 
 ### Dashboard
@@ -16,9 +17,12 @@
 ### Add & Edit Product
 
 ![Add Product](screenshots/add-product.png)
+
 ![Edit Product](screenshots/Edit-product.png)
+
 
 ### Categories
 
 ![Categories Page](screenshots/categories.png)
-![Categories Page](screenshots/add-category.png)
+
+![Add Category](screenshots/add-category.png)
