@@ -22,7 +22,6 @@
 ![Categories Page](screenshots/categories.png)
 ![Categories Page](screenshots/add-category.png)
 
-### Edit product
-
+### 
 ![Edit Product](screenshots/Edit-product.png)
 
