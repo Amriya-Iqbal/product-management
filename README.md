@@ -28,7 +28,7 @@ A full-stack product and inventory management system built with PHP and MySQL. A
 
 ![Login Page](screenshots/login.png)
 
-![Register Page](screenshots/register.png)
+![Register Page](screenshots/Register.png)
 
 ### Dashboard
 
