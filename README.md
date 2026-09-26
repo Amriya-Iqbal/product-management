@@ -24,5 +24,5 @@
 
 ### Edit product
 
-![Add Product](screenshots/Edit-product.png)
+![Edit Product](screenshots/Edit-product.png)
 
