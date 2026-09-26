@@ -18,7 +18,7 @@
 
 ![Add Product](screenshots/add-product.png)
 
-![Edit Product](screenshots/Edit-product.png)
+![Edit Product](screenshots/Edit-Product.png)
 
 
 ### Categories
